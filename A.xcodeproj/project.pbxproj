@@ -60,6 +60,7 @@
 		BCFB4AAA25411AE50053F538 /* AUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCFB4AAE25411AE50053F538 /* AUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AUITests.swift; sourceTree = "<group>"; };
 		BCFB4AB025411AE50053F538 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCFB4AEF2541665E0053F538 /* A-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "A-Bridging-Header.h"; sourceTree = "<group>"; };
 		D8E1014CFADA0A86E0E3E98A /* Pods-A.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-A.debug.xcconfig"; path = "Target Support Files/Pods-A/Pods-A.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,6 +151,7 @@
 				FDF5DD53A87682151C933C44 /* Extension */,
 				645467B8DDD0FD6A678017EC /* A.podspec */,
 				6796A59B3D0747487CF1594B /* A_Extension.podspec */,
+				BCFB4AEF2541665E0053F538 /* A-Bridging-Header.h */,
 			);
 			path = A;
 			sourceTree = "<group>";
@@ -258,6 +260,7 @@
 				TargetAttributes = {
 					BCFB4A8825411AE00053F538 = {
 						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
 					};
 					BCFB4A9E25411AE50053F538 = {
 						CreatedOnToolsVersion = 12.1;
@@ -545,6 +548,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW25G7UN2Y;
 				INFOPLIST_FILE = A/Info.plist;
@@ -554,6 +558,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.happy.lingjie.A;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "A/A-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -565,6 +571,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YW25G7UN2Y;
 				INFOPLIST_FILE = A/Info.plist;
@@ -574,6 +581,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.happy.lingjie.A;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "A/A-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -10,7 +10,7 @@ use_modular_headers!
 target 'A' do
 
   pod "CTMediator"
-
+  pod 'SwiftHandyFrame'
   # private pods
  
 end
