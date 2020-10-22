@@ -2,8 +2,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "A_Extension"
-  s.version      = "1"
-  s.swift_version = '5.1'
+  s.version      = "0.0.1"
+  s.swift_version = '5.3'
   s.summary      = "A_Extension."
 
   s.description  = <<-DESC
@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
   
   s.requires_arc = true
 
-  s.dependency "CTMediator"
+  s.dependency "CTMediator", '~> 44'
 
 end

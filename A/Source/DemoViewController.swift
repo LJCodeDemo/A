@@ -10,6 +10,8 @@ import UIKit
 class DemoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "A Demo"
         view.backgroundColor = .blue
     }
 }
